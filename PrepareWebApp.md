@@ -12,6 +12,7 @@ CLAB Script:
 iex (iwr "https://raw.githubusercontent.com/NEXTGEN-CyberLAB/WIN-CyberLAB-Tools/main/CyberLAB-quickstart.ps1" -UseBasicParsing).Content
 
 ```
+---
 ## Prepare WINZNLABSQL
 ### Chocolatey Install:
 ```
@@ -40,6 +41,7 @@ CREATE USER 'juiceshop'@'%' IDENTIFIED BY 'Ju1ce$hop!';
 GRANT ALL PRIVILEGES ON juiceshop.* TO 'juiceshop'@'%';
 FLUSH PRIVILEGES;
 ```
+---
 ## Prepare WINZNLABAPP
 ### Chocolatey Install:
 ```
