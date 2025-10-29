@@ -1,3 +1,6 @@
+>[!IMPORTANT]
+> Deploying the Web Application
+
 ## Deploy 2 servers: WINZNLABSQL and WINZNLABAPP
 
 - Use template "Windows Server 2022 Standard"
