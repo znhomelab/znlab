@@ -14,8 +14,31 @@ iex (iwr "https://raw.githubusercontent.com/NEXTGEN-CyberLAB/WIN-CyberLAB-Tools/
 ```
 ## Prepare both servers:
 
-Chocolatey Install:
+### Chocolatey Install:
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+### MySQL-cli Install
+```
+choco install mysql-cli
+```
+
+### MySQL-server Install
+
+Download installer:
+https://dev.mysql.com/downloads/installer/
+Run installer and select MySQL Server and MySQL Workbench
+
+## Configure database user for the webapp (use the root password defined before)
+```
+mysql -h WINZNLABSQL -u root -p
+```
+
+## Configure database for the webapp
+```
+use mysql;
+update user set password=PASSWORD('NEWPASSWORD') where User='root';
+flush privileges;
 ```
 
