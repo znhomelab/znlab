@@ -77,3 +77,18 @@ npm start
 Now you can access to the webapp
 
 http://winznlab
+
+
+## Install nssm
+```
+choco install nssm -y
+```
+## Execute as a Service with nssm
+
+```
+nssm install JuiceShop "C:\Program Files\nodejs\node.exe" "server.js"
+nssm set JuiceShop AppDirectory "C:\Apps\juice-shop"
+nssm set JuiceShop AppEnvironmentExtra "PORT=80","NODE_ENV=production","DB_TYPE=mysql","DB_HOST=WINZNLABSQL","DB_PORT=3306","DB_NAME=juiceshop","DB_USER=juiceshop","DB_PASSWORD=Ju1ce$hop!"
+nssm set JuiceShop Start SERVICE_AUTO_START
+nssm start JuiceShop
+```
