@@ -12,13 +12,11 @@ CLAB Script:
 iex (iwr "https://raw.githubusercontent.com/NEXTGEN-CyberLAB/WIN-CyberLAB-Tools/main/CyberLAB-quickstart.ps1" -UseBasicParsing).Content
 
 ```
-## Prepare both servers:
-
+## Prepare WINZNLABSQL
 ### Chocolatey Install:
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
-
 ### MySQL-cli Install
 ```
 choco install mysql-cli
@@ -38,8 +36,16 @@ mysql -h WINZNLABSQL -u root -p
 ## Configure database for the webapp
 ```
 CREATE DATABASE juiceshop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'juiceshop'@'WINZNLABAPP' IDENTIFIED BY 'Ju1ce$hop!';
-GRANT ALL PRIVILEGES ON juiceshop.* TO 'juiceshop'@'WINZNLABAPP';
+CREATE USER 'juiceshop'@'%' IDENTIFIED BY 'Ju1ce$hop!';
+GRANT ALL PRIVILEGES ON juiceshop.* TO 'juiceshop'@'%';
 FLUSH PRIVILEGES;
 ```
-
+## Prepare WINZNLABAPP
+### Chocolatey Install:
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+### MySQL-cli Install
+```
+choco install mysql-cli
+```
