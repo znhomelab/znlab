@@ -37,8 +37,9 @@ mysql -h WINZNLABSQL -u root -p
 
 ## Configure database for the webapp
 ```
-use mysql;
-update user set password=PASSWORD('NEWPASSWORD') where User='root';
-flush privileges;
+CREATE DATABASE juiceshop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'juiceshop'@'WINZNLABAPP' IDENTIFIED BY 'Ju1ce$hop!';
+GRANT ALL PRIVILEGES ON juiceshop.* TO 'juiceshop'@'WINZNLABAPP';
+FLUSH PRIVILEGES;
 ```
 
