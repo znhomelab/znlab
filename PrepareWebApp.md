@@ -9,10 +9,9 @@
 
 >[!TIP]
 >CLAB Script:
-```
-iex (iwr "https://raw.githubusercontent.com/NEXTGEN-CyberLAB/WIN-CyberLAB-Tools/main/CyberLAB-quickstart.ps1" -UseBasicParsing).Content
-
-```
+>```
+>iex (iwr "https://raw.githubusercontent.com/NEXTGEN-CyberLAB/WIN-CyberLAB-Tools/main/CyberLAB-quickstart.ps1" -UseBasicParsing).Content
+>```
 ---
 ## Prepare WINZNLABSQL
 ### Chocolatey Install:
