@@ -15,3 +15,32 @@
 >```
 >iex (iwr "https://raw.githubusercontent.com/NEXTGEN-CyberLAB/WIN-CyberLAB-Tools/main/CyberLAB-quickstart.ps1" -UseBasicParsing).Content
 >```
+## Fix time issues
+If you want to set time.windows.com as reference
+```
+w32tm /config /manualpeerlist:time.windows.com /syncfromflags:MANUAL
+w32tm /config /update
+w32tm /query /source
+w32tm /resync
+Set-TimeZone "Romance Standard Time"
+```
+
+If you want to set time.windows.com as reference
+```
+w32tm /config /manualpeerlist:WINZNLABDC.ZNLAB.LOC /syncfromflags:MANUAL
+w32tm /config /update
+w32tm /query /source
+w32tm /resync
+Set-TimeZone "Romance Standard Time"
+```
+
+## Change keyboard layout
+Check your actual keyboard layout
+```
+Get-WinUserLanguageList
+```
+Change your keyboard layout to Spanish
+```
+$LanguageList = New-WinUserLanguageList -LanguageTag "es-ES"
+Set-WinUserLanguageList -LanguageList $LanguageList
+```
