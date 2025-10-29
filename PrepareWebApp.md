@@ -49,3 +49,31 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 choco install mysql-cli
 ```
+## Install node + dependencies
+```
+choco install nodejs-lts git nssm -y
+cd C:\Apps
+git clone https://github.com/juice-shop/juice-shop.git --depth 1
+cd juice-shop
+npm install
+npm install mysql2
+```
+## Configure environment variables
+
+```
+setx PORT 80
+setx NODE_ENV production
+setx DB_TYPE mysql
+setx DB_HOST WINZNLABSQL
+setx DB_PORT 3306
+setx DB_NAME juiceshop
+setx DB_USER juiceshop
+setx DB_PASSWORD Ju1ce$hop!
+```
+## Start node
+```
+npm start
+```
+Now you can access to the webapp
+
+http://winznlab
