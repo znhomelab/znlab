@@ -92,4 +92,4 @@ nssm set JuiceShop AppEnvironmentExtra "PORT=80","NODE_ENV=production","DB_TYPE=
 nssm set JuiceShop Start SERVICE_AUTO_START
 nssm start JuiceShop
 ```
-(https://myoctocat.com/assets/images/base-octocat.svg)
+![](https://myoctocat.com/assets/images/base-octocat.svg)
