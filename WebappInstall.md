@@ -4,8 +4,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 
 ### Install XAMPP
+
 https://www.apachefriends.org/index.html
+
 https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe/download
+
 Other apps that can be installed:
 
 - [ ] MySQL
