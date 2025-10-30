@@ -1,14 +1,16 @@
-Install the following packages:
+### Chocolatey Install:
 ```
-choco install apache-httpd php php-extensions mysql-odbc git unzip -y
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-Edit
-C:\tools\Apache24\conf\httpd.conf
+### Install XAMPP
+https://www.apachefriends.org/index.html
+https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe/download
+Other apps that can be installed:
 
-```
-LoadModule php_module "C:/tools/php/php8apache2_4.dll"
-AddHandler application/x-httpd-php .php
-PHPIniDir "C:/tools/php"
-DirectoryIndex index.php index.html
-```
+- [ ] MySQL
+- [x] FileZilla FTP
+- [ ] Mercury Mail Server
+- [ ] Tomcat
+- [ ] Perl
+
