@@ -5,7 +5,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 ### MySQL-cli Install
 ```
-choco install mysql-cli
+choco install mysql-cli -Y
 ```
 
 ### MySQL-server Install
@@ -34,7 +34,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 ### MySQL-cli Install
 ```
-choco install mysql-cli
+choco install mysql-cli -Y
 ```
 ## Install node + dependencies
 ```
