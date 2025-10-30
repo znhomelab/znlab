@@ -38,15 +38,25 @@ choco install mysql-cli -Y
 ```
 > [!IMPORTANT]
 > Review from here!!!!
+choco install nodejs git nssm -Y
+
+
 ## Install node + dependencies
 ```
-choco install nodejs-lts git nssm -y
+choco install nodejs git nssm -y
+```
+## Prepare environment,
+> [!TIPS] Open a new Powershell window
+```
+New-Item -ItemType Directory -Force -Path C:\Apps
 cd C:\Apps
 git clone https://github.com/juice-shop/juice-shop.git --depth 1
 cd juice-shop
 npm install
 npm install mysql2
 ```
+> [!IMPORTANT]
+> Review to here!!!!
 ## Configure environment variables
 
 ```
