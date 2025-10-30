@@ -41,6 +41,5 @@ Get-WinUserLanguageList
 ```
 Change your keyboard layout to Spanish
 ```
-$LanguageList = New-WinUserLanguageList -LanguageTag "es-ES"
-Set-WinUserLanguageList -LanguageList $LanguageList
+Set-WinUserLanguageList es-ES -Force
 ```
