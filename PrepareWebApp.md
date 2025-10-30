@@ -36,6 +36,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 choco install mysql-cli -Y
 ```
+> [!IMPORTANT]
+> Review from here!!!!
 ## Install node + dependencies
 ```
 choco install nodejs-lts git nssm -y
