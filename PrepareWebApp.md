@@ -46,7 +46,7 @@ choco install nodejs git nssm -Y
 choco install nodejs git nssm -y
 ```
 ## Prepare environment,
-> [!TIPS] Open a new Powershell window
+> [!TIP] Open a new Powershell window
 ```
 New-Item -ItemType Directory -Force -Path C:\Apps
 cd C:\Apps
