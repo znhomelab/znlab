@@ -1,10 +1,10 @@
 # How to setup the LAB
 
 # Prepare both servers
-[ ] Rename computer name
-[ ] Join server to domain
-[ ] Fix time syncronization
-[ ] Configure keyboard layout
+- [ ] Rename computer name
+- [ ] Join server to domain
+- [ ] Fix time syncronization
+- [ ] Configure keyboard layout
 
 >[!IMPORTANT]
 > Deploying the Web Application
