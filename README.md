@@ -56,8 +56,9 @@ Now you are ready for the next step
 
 ## Configure WINZNLABSQL
 
-[Read] (WINZNLABSQL.md) file
+Read [WINZNLABSQL](/WINZNLABSQL.md) file
 
 ## Configure WINZNLABAPP
 
-[Read] (WINZNLABSQL.md) file
+Read [WINZNLABAPP](WINZNLABAPP.md) file
+
