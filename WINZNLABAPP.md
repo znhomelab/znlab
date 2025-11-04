@@ -30,8 +30,10 @@ Rename-Item -Path C:\xampp\htdocs -NewName htdocs.DIST
 Expand-Archive -LiteralPath C:\temp\latest.zip -DestinationPath C:\xampp\htdocs
 ```
 
-### Download and copy wp-cofig.php
-
+### Download and copy wp-config.php
+```
+Invoke-WebRequest -Uri https://github.com/znhomelab/znlab/blob/main/wp-config.php -OutFile C:\xampp\htdocs\wp-config.php.zip -UseBasicParsing
+```
 ### Start Apache from XAMPP Control Panel
 
 ### Access and configure Wordpress
