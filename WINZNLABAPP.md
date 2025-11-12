@@ -32,7 +32,7 @@ Expand-Archive -LiteralPath C:\temp\latest.zip -DestinationPath C:\xampp\htdocs
 
 ### Download and copy wp-config.php
 ```
-Invoke-WebRequest -Uri https://github.com/znhomelab/znlab/blob/main/wp-config.php -OutFile C:\xampp\htdocs\wp-config.php -UseBasicParsing
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/znhomelab/znlab/refs/heads/main/wp-config.php -OutFile C:\xampp\htdocs\wp-config.php -UseBasicParsing
 ```
 ### Start Apache from XAMPP Control Panel
 
