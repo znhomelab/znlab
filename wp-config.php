@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'wordpress' );
 
 /** Database username */
-define( 'DB_USER', 'wpuser' );
+define( 'DB_USER', 'wpdbuser' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'password' );
+define( 'DB_PASSWORD', 'JSup3R$pzrd!' );
 
 /** Database hostname */
 define( 'DB_HOST', 'WINZNLABSQL' );
