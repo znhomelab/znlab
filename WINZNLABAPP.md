@@ -37,3 +37,10 @@ Invoke-WebRequest -Uri https://github.com/znhomelab/znlab/blob/main/wp-config.ph
 ### Start Apache from XAMPP Control Panel
 
 ### Access and configure Wordpress
+```
+http://WINZNLABAPP
+```
+Configure the new Wordpress App
+
+User: admin
+Password: mujkomplic84$
