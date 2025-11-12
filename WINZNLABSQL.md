@@ -55,8 +55,8 @@ mysql -h WINZNLABSQL -u root -p
 
 ## Configure database for the webapp
 ```
-CREATE DATABASE juiceshop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'juiceshop'@'%' IDENTIFIED BY 'Ju1ce$hop!';
-GRANT ALL PRIVILEGES ON juiceshop.* TO 'juiceshop'@'%';
+CREATE DATABASE wordpress CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'wpdbuser'@'%' IDENTIFIED BY 'JSup3R$pzrd!';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wpdbuser'@'%';
 FLUSH PRIVILEGES;
 ```
