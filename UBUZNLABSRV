@@ -1,0 +1,21 @@
+## Create traffic generator application
+
+sudo apt install git docker-compose
+
+
+.
+├── docker-compose.yml
+├── Dockerfile
+├── requirements.txt
+├── traffic_generator.py
+├── .env.example
+└── README.md
+
+File .env
+```
+WP_URL=http://winznlabapp
+WP_USER=admin
+WP_PASSWORD=mujkomplic84$
+TRAFFIC_INTERVAL=60    # Segundos entre peticiones de tráfico
+POST_INTERVAL=300      # Segundos entre creación de posts
+```
