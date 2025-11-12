@@ -1,21 +1,29 @@
+## Fix DNS pointing to WINZNLABDC
+
+Check actual configuration:
+```
+sudo resolvectl dns
+```
+Configure on the right link:
+
+```
+sudo resolvectl dns ens160 10.160.55.217
+
+```
+
+znlab.loc
 ## Create traffic generator application
 
 sudo apt install git docker-compose
 
+git clone https://github.com/znhomelab/znlab.git
 
-.
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-├── traffic_generator.py
-├── .env.example
-└── README.md
+cd $HOME/znlab/wptraffic
 
-File .env
-```
-WP_URL=http://winznlabapp
-WP_USER=admin
-WP_PASSWORD=mujkomplic84$
-TRAFFIC_INTERVAL=60    # Segundos entre peticiones de tráfico
-POST_INTERVAL=300      # Segundos entre creación de posts
-```
+Some useful commands:
+sudo docker-compose up --build
+sudo docker-compose up -d
+sudo docker-compose down
+sudo docker image prune -af
+
+
