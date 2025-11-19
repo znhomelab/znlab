@@ -21,9 +21,20 @@ git clone https://github.com/znhomelab/znlab.git
 cd $HOME/znlab/wptraffic
 
 Some useful commands:
+Build:
+```
 sudo docker-compose up --build
+```
+Run as daemon
+```
 sudo docker-compose up -d
+```
+Shutdown
+```
 sudo docker-compose down
+```
+Delete all images
+```
 sudo docker image prune -af
-
+```
 
