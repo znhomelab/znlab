@@ -29,6 +29,14 @@ Run as daemon
 ```
 sudo docker-compose up -d
 ```
+Check logs
+```
+sudo docker-compose logs
+```
+Check logs
+```
+sudo docker exec -it wp_traffic_generator /bin/bash
+```
 Shutdown
 ```
 sudo docker-compose down
