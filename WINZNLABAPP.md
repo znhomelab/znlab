@@ -44,3 +44,18 @@ Configure the new Wordpress App
 
 User: admin
 Password: mujkomplic84$
+
+## Test sql connection from WINZNLABAPP to WINZNLABSQL
+
+### Chocolatey Install (if not already installed)
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+### MySQL-cli Install (if not already installed)
+```
+choco install mysql-cli -Y
+```
+### Test connection using the wbdpuser's password
+```
+mysql wordpress -h WINZNLABSQL -u wpdbuser -p
+```
