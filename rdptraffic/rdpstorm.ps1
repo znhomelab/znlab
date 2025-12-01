@@ -4,7 +4,7 @@ $Domain   = 'ZNLAB.LOC'
 $Users    = @('aaron.douglas','adrian.william','alexandra.samantha')  # varios usuarios
 $PlainPassword = 'NuevaP@ssw0rd'                 # misma contraseña para todos
 $Servers  = @('WINZNLABSQL','WINZNLABAPP','WINZNLABDC') | Select-Object -Unique
-$HoldSeconds = 25; $MinSleep = 5; $MaxSleep = 20; $Concurrent = 1
+$HoldSeconds = 20; $MinSleep = 3; $MaxSleep = 10; $Concurrent = 1
 $Log = 'C:\Scripts\log-rdp-storm.log'
 # -------------
 
